@@ -133,9 +133,6 @@ h1
     background-size: cover;
     height: 400px;
     width: 100%;
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%); */
-    /* color: #fff;
-     padding-top: 5% */
 }
 
 #banner-team
@@ -145,9 +142,6 @@ h1
     height: 380px;
     width: 100%;
     margin-bottom: 15px;
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%); */
-    /* color: #fff;
-     padding-top: 5% */
 }
 
 #banner-about-us
@@ -157,9 +151,6 @@ h1
     height: 380px;
     width: 100%;
     margin-bottom: 15px;
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%); */
-    /* color: #fff;
-     padding-top: 5% */
 }
 
 #banner-blog
@@ -213,6 +204,12 @@ h1
     text-transform: uppercase;
 }
 
+.services-large
+{
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
 /*------------------about us section-------------------------->*/
 
 #about-us
@@ -232,11 +229,12 @@ h1
 #about-us ul
 {
     margin-left: 20px;
+    line-height: normal;
 }
 #about-us ul li
 {
     list-style: none;
-    margin: 10px 0;
+    line-height: normal;
 }
 
 #about-us ul i
@@ -244,7 +242,9 @@ h1
     font-size: 20px;
     padding-right: 4px;
     color: #116bc2;
+    line-height: normal;
 }
+
 
 /* testimonials */
 
@@ -317,19 +317,18 @@ h1
 
 .carousel-item{
     height: 800px;
-    width: 80%;
+    width: 50%;
 }
 .carousel-item img{
-    width: 80%;
+    width: 50%;
     height: 800px;
 }
-
-
-.card-body
+.carousel.card-body
 {
     color: black;
 }
 
+/* Previous events card list */
 .events .card {
     margin-top: 50px;
     border: 10px;
@@ -346,8 +345,6 @@ h1
     z-index: 9;
     border-radius: 0;
 }
-
-
 
 .events .card-img img {
     max-width: 100%;
@@ -438,7 +435,7 @@ h1
     border: 10px;
     padding: 0 30px;
     margin-bottom: 60px;
-    margin-left: 20px;
+    margin-left: 100px;
     position: fixed;
 }
 
@@ -569,7 +566,7 @@ h1
 }
 
 
-.card {
+.elements.card {
     background: white;
     text-decoration: none;
     color: #444;
@@ -581,27 +578,27 @@ h1
     top: 0;
     transition: all 0.1s ease-in;
 }
-.card:hover {
+.elements.card:hover {
     top: -2px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
-.card article {
+.elements.card article {
     padding: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.card h1 {
+.elements.card h1 {
     font-size: 20px;
     margin: 0;
     color: #333;
 }
-.card p {
+.elements.card p {
     flex: 1;
     line-height: 1.4;
 }
-.card span {
+.elements.card span {
     font-size: 12px;
     font-weight: bold;
     color: #999;
@@ -609,7 +606,7 @@ h1
     letter-spacing: 0.05em;
     margin: 2em 0 0 0;
 }
-.card .thumb {
+.elements.card .thumb {
     padding-bottom: 60%;
     background-size: cover;
     background-position: center center;
